@@ -1,6 +1,6 @@
-# grafikas
+# taika
 
-App calendar with included work shedule and integrated to-do list.
-Work shedule: green color indicates working days, pink color indicates rest days.
-To-do list: each day contains separate to-do list. If something added to to-do list, that day appears red color.
+App Taika is calendar with marked game days and registration form.
+Game shedule: green color indicates game days, grey color indicates rest days.
+Registration list: each day contains separate registration list.
 White color indicates present day.
