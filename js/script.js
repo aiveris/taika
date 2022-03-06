@@ -3109,7 +3109,7 @@ const renderTodoB1 = (doc) => {
   // Click edit to-do
   const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
   btnEdit.addEventListener("click", () => {
-    editModaal.classList.add("modal-show");
+    editModal.classList.add("modal-show");
     id = doc.id;
     editModalForm.todo.value = doc.data().todo;
   });
@@ -3600,7 +3600,7 @@ db.collection("b8").onSnapshot((snapshot) => {
       let tbody = tr.parentElement;
       tableTodosB8.removeChild(tbody);
       plansB8.classList.remove("addedPlans");
-      countB--;
+      countB8--;
       document.getElementById("countB8").innerHTML = countB8;
     }
     if (change.type === "modified") {
