@@ -1052,7 +1052,7 @@ const renderTodoA1 = (doc) => {
   // Click edit to-do
   const btnEdit = document.querySelector(`[data-id='${doc.id}'] .btn-edit`);
   btnEdit.addEventListener("click", () => {
-    editModaal.classList.add("modal-show");
+    editModal.classList.add("modal-show");
     id = doc.id;
     editModalForm.todo.value = doc.data().todo;
   });
@@ -1273,7 +1273,7 @@ db.collection("a4").onSnapshot((snapshot) => {
     if (change.type === "removed") {
       let tr = document.querySelector(`[data-id='${change.doc.id}']`);
       let tbody = tr.parentElement;
-      tableTodos4.removeChild(tbody);
+      tableTodosA4.removeChild(tbody);
       plansA4.classList.remove("addedPlans");
       countA4--;
       document.getElementById("countA4").innerHTML = countA4;
