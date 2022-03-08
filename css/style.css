@@ -148,6 +148,18 @@ table th {
   background: red;
   color: #ffff;
 }
+.btn-modal {
+  width: 65px;
+  height: 25px;
+  color: #457b9d;
+  border: 1px solid #457b9d;
+  margin-left: 18px;
+}
+.btn-modal:hover {
+  background: #457b9d;
+  color: #ffff;
+}
+
 .table-wrapper {
   text-align: center;
 }
@@ -202,17 +214,7 @@ table th {
 .modal-body {
   padding: 2rem;
 }
-.btn-modal {
-  width: 65px;
-  height: 25px;
-  color: #457b9d;
-  border: 1px solid #457b9d;
-  margin-left: 18px;
-}
-.btn-modal:hover {
-  background: #457b9d;
-  color: #ffff;
-}
+
 input {
   width: 10rem;
   height: 2.2rem;
@@ -221,9 +223,8 @@ input {
   font-size: large;
 }
 /* .addedPlans {
-  color: black;
+  color: red;
 } */
-
 .count {
   color: #457b9d;
   font-weight: bold;
@@ -232,3 +233,21 @@ input {
 p {
   display: inline-block;
 }
+i {
+  margin-left: 70px;
+  /* content: url(../assets/close.svg); */
+  /* width: 2rem;
+  height: 2rem;
+  display: inline-block; */
+}
+h3 {
+  display: inline-block;
+  margin-left: 100px;
+}
+/* .btn-close {
+  display: inline-block;
+  margin-left: 70px;
+  width: 22px;
+  height: 22px;
+  font-size: 1em;
+} */

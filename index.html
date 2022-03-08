@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Taika</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <div class="board">
@@ -48,15 +52,21 @@
       <button onclick="todo_a26()" id="a26" class="free buttonA26">26</button>
       <button onclick="todo_a27()" id="a27" class="free buttonA27">27</button>
       <button onclick="todo_a28()" id="a28" class="free buttonA28">28</button>
-      <button onclick="todo_29()" id="29" class="free buttonA29">29</button>
-      <button onclick="todo_30()" id="30" class="free buttonA30">30</button>
-      <button onclick="todo_31()" id="31" class="free buttonA31">31</button>
+      <button onclick="todo_a29()" id="29" class="free buttonA29">29</button>
+      <button onclick="todo_a30()" id="30" class="free buttonA30">30</button>
+      <button onclick="todo_a31()" id="31" class="free buttonA31">31</button>
 
       <!-- Add Modal -->
       <div class="show-modal-a1 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>1d.</h4>
+            <h3>1d. 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countA1" class="count">0</p>
           </div>
@@ -69,6 +79,8 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
                 <button class="btn btn-modal">OK</button>
               </form>
@@ -79,7 +91,12 @@
       <div class="show-modal-a2 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>2d.</h4>
+            <h3>2d. 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
             <label>Užsiregistravo:</label>
             <p id="countA2" class="count">0</p>
           </div>
@@ -92,6 +109,8 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
                 <button class="btn btn-modal">OK</button>
               </form>
@@ -102,7 +121,13 @@
       <div class="show-modal-a3 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>3d.</h4>
+            <h3>3d. 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countA3" class="count">0</p>
           </div>
@@ -115,7 +140,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -124,7 +152,13 @@
       <div class="show-modal-a4 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>4d. Treniruotė</h4>
+            <h3>4d. 20:15</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <h4>Treniruotė</h4>
             <label>Užsiregistravo:</label>
             <p id="countA4" class="count">0</p>
           </div>
@@ -137,7 +171,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -146,7 +183,13 @@
       <div class="show-modal-a5 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>5d.</h4>
+            <h3>5d. 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countA5" class="count">0</p>
           </div>
@@ -159,7 +202,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -168,9 +214,13 @@
       <div class="show-modal-a6 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>
-              6d. 20:10<br />"Out of office"<br />Studentų g. 39 Mažoji salė
-            </h4>
+            <h3>6d. 20:10</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <h4>"Out of office"<br />Studentų g. 39 Mažoji salė</h4>
             <label>Užsiregistravo:</label>
             <p id="countA6" class="count">0</p>
           </div>
@@ -183,7 +233,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -192,7 +245,13 @@
       <div class="show-modal-a7 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>7d.</h4>
+            <h3>7d. 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countA7" class="count">0</p>
           </div>
@@ -205,7 +264,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -214,7 +276,13 @@
       <div class="show-modal-a8 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>8d. 19:30<br />"Naresta-2"<br />VTDK (Antakalnio G. 54)</h4>
+            <h3>8d. 19:30</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <h4>"Naresta-2"<br />VTDK (Antakalnio G. 54)</h4>
             <label>Užsiregistravo:</label>
             <p id="countA8" class="count">0</p>
           </div>
@@ -227,6 +295,8 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
                 <button class="btn btn-modal">OK</button>
               </form>
@@ -237,7 +307,13 @@
       <div class="show-modal-a9 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>9d.</h4>
+            <h3>9d. 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countA9" class="count">0</p>
           </div>
@@ -250,7 +326,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -259,7 +338,13 @@
       <div class="show-modal-a10 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>10d.</h4>
+            <h3>10d 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countA10" class="count">0</p>
           </div>
@@ -272,7 +357,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -281,7 +369,13 @@
       <div class="show-modal-a11 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>11d. Treniruotė</h4>
+            <h3>11d 20:15</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <h4>Treniruotė</h4>
             <label>Užsiregistravo:</label>
             <p id="countA11" class="count">0</p>
           </div>
@@ -294,7 +388,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -303,7 +400,13 @@
       <div class="show-modal-a12 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>12d.</h4>
+            <h3>12d 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countA12" class="count">0</p>
           </div>
@@ -316,7 +419,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -325,7 +431,13 @@
       <div class="show-modal-a13 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>13d.</h4>
+            <h3>13d 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countA13" class="count">0</p>
           </div>
@@ -338,7 +450,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -347,7 +462,13 @@
       <div class="show-modal-a14 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>14d.</h4>
+            <h3>14d 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countA14" class="count">0</p>
           </div>
@@ -360,7 +481,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -369,7 +493,13 @@
       <div class="show-modal-a15 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>15d.</h4>
+            <h3>15d 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countA15" class="count">0</p>
           </div>
@@ -382,7 +512,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -391,7 +524,13 @@
       <div class="show-modal-a16 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>16d.</h4>
+            <h3>16d 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countA16" class="count">0</p>
           </div>
@@ -404,7 +543,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -413,7 +555,13 @@
       <div class="show-modal-a17 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>17d.</h4>
+            <h3>17d 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countA17" class="count">0</p>
           </div>
@@ -426,7 +574,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -435,7 +586,13 @@
       <div class="show-modal-a18 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>18d. Treniruotė</h4>
+            <h3>18d 20:15</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <h4>Treniruotė</h4>
             <label>Užsiregistravo:</label>
             <p id="countA18" class="count">0</p>
           </div>
@@ -448,7 +605,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -457,7 +617,13 @@
       <div class="show-modal-a19 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>19d.</h4>
+            <h3>19d 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countA19" class="count">0</p>
           </div>
@@ -470,7 +636,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -479,7 +648,13 @@
       <div class="show-modal-a20 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>20d.</h4>
+            <h3>20d 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countA20" class="count">0</p>
           </div>
@@ -492,7 +667,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -501,7 +679,13 @@
       <div class="show-modal-a21 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>21d.</h4>
+            <h3>21d 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countA21" class="count">0</p>
           </div>
@@ -514,7 +698,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -523,7 +710,13 @@
       <div class="show-modal-a22 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>22d.</h4>
+            <h3>22d 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countA22" class="count">0</p>
           </div>
@@ -536,7 +729,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -545,7 +741,13 @@
       <div class="show-modal-a23 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>23d.</h4>
+            <h3>23d 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countA23" class="count">0</p>
           </div>
@@ -558,7 +760,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -567,7 +772,13 @@
       <div class="show-modal-a24 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>24d.</h4>
+            <h3>24d 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countA24" class="count">0</p>
           </div>
@@ -580,7 +791,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -589,7 +803,13 @@
       <div class="show-modal-a25 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>25d. Treniruotė</h4>
+            <h3>25d 20:15</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <h4>Treniruotė</h4>
             <label>Užsiregistravo:</label>
             <p id="countA25" class="count">0</p>
           </div>
@@ -602,7 +822,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -611,7 +834,13 @@
       <div class="show-modal-a26 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>26d.</h4>
+            <h3>26d 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countA26" class="count">0</p>
           </div>
@@ -624,7 +853,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -633,7 +865,13 @@
       <div class="show-modal-a27 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>27d.</h4>
+            <h3>27d 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countA27" class="count">0</p>
           </div>
@@ -646,7 +884,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -655,7 +896,13 @@
       <div class="show-modal-a28 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>28d.</h4>
+            <h3>28d 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countA28" class="count">0</p>
           </div>
@@ -668,7 +915,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -677,7 +927,13 @@
       <div class="show-modal-a29 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>29d.</h4>
+            <h3>29d 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countA29" class="count">0</p>
           </div>
@@ -690,7 +946,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -699,7 +958,13 @@
       <div class="show-modal-a30 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>30d.</h4>
+            <h3>30d 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countA30" class="count">0</p>
           </div>
@@ -712,7 +977,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -721,7 +989,13 @@
       <div class="show-modal-a31 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>31d.</h4>
+            <h3>31d 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countA31" class="count">0</p>
           </div>
@@ -734,7 +1008,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -746,7 +1023,14 @@
           <div class="modal-header"><h4>Koreguoti</h4></div>
           <div class="modal-body">
             <form class="form" autocomplete="off">
-              <input type="text" name="todo" placeholder="Todo" />
+              <input
+                type="text"
+                name="todo"
+                placeholder="Įveskite vardą"
+                maxlength="20"
+                required="required"
+                pattern="[A-Ža-ž0-9]{1,20}"
+              />
               <button class="btn btn-modal">OK</button>
             </form>
           </div>
@@ -805,7 +1089,13 @@
       <div class="show-modal-b1 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>1d. Treniruotė</h4>
+            <h3>1d 20:15</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <h4>Treniruotė</h4>
             <label>Užsiregistravo:</label>
             <p id="countB1" class="count">0</p>
           </div>
@@ -818,7 +1108,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -827,7 +1120,13 @@
       <div class="show-modal-b2 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>2d.</h4>
+            <h3>2d 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countB2" class="count">0</p>
           </div>
@@ -840,7 +1139,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -849,7 +1151,13 @@
       <div class="show-modal-b3 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>3d.</h4>
+            <h3>3d 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countB3" class="count">0</p>
           </div>
@@ -862,7 +1170,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -871,7 +1182,13 @@
       <div class="show-modal-b4 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>4d.</h4>
+            <h3>4d 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countB4" class="count">0</p>
           </div>
@@ -884,7 +1201,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -893,7 +1213,13 @@
       <div class="show-modal-b5 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>5d.</h4>
+            <h3>5d 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countB5" class="count">0</p>
           </div>
@@ -906,7 +1232,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -915,7 +1244,13 @@
       <div class="show-modal-b6 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>6d.</h4>
+            <h3>6d 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countB6" class="count">0</p>
           </div>
@@ -928,7 +1263,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -937,7 +1275,13 @@
       <div class="show-modal-b7 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>7d.</h4>
+            <h3>7d 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countB7" class="count">0</p>
           </div>
@@ -950,7 +1294,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -959,7 +1306,13 @@
       <div class="show-modal-b8 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>8d. Treniruotė</h4>
+            <h3>8d 20:15</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <h4>Treniruotė</h4>
             <label>Užsiregistravo:</label>
             <p id="countB8" class="count">0</p>
           </div>
@@ -972,7 +1325,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -981,7 +1337,13 @@
       <div class="show-modal-b9 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>9d.</h4>
+            <h3>9d 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countB9" class="count">0</p>
           </div>
@@ -994,7 +1356,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -1003,7 +1368,13 @@
       <div class="show-modal-b10 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>10d.</h4>
+            <h3>10d 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countB10" class="count">0</p>
           </div>
@@ -1016,7 +1387,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -1025,7 +1399,13 @@
       <div class="show-modal-b11 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>11d.</h4>
+            <h3>11d 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countB11" class="count">0</p>
           </div>
@@ -1038,7 +1418,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -1047,7 +1430,13 @@
       <div class="show-modal-b12 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>12d.</h4>
+            <h3>12d 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countB12" class="count">0</p>
           </div>
@@ -1060,7 +1449,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -1069,7 +1461,13 @@
       <div class="show-modal-b13 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>13d.</h4>
+            <h3>13d 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countB13" class="count">0</p>
           </div>
@@ -1082,7 +1480,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -1091,7 +1492,13 @@
       <div class="show-modal-b14 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>14d.</h4>
+            <h3>14d 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countB14" class="count">0</p>
           </div>
@@ -1104,7 +1511,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -1113,7 +1523,13 @@
       <div class="show-modal-b15 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>15d. Treniruotė</h4>
+            <h3>15d 20:15</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <h4>Treniruotė</h4>
             <label>Užsiregistravo:</label>
             <p id="countB15" class="count">0</p>
           </div>
@@ -1126,7 +1542,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -1135,7 +1554,13 @@
       <div class="show-modal-b16 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>16d.</h4>
+            <h3>16d 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countB16" class="count">0</p>
           </div>
@@ -1148,7 +1573,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -1157,7 +1585,13 @@
       <div class="show-modal-b17 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>17d.</h4>
+            <h3>17d 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countB17" class="count">0</p>
           </div>
@@ -1170,7 +1604,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -1179,7 +1616,13 @@
       <div class="show-modal-b18 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>18d.</h4>
+            <h3>18d 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countB18" class="count">0</p>
           </div>
@@ -1192,7 +1635,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -1201,7 +1647,13 @@
       <div class="show-modal-b19 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>19d.</h4>
+            <h3>19d 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countB19" class="count">0</p>
           </div>
@@ -1214,7 +1666,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -1223,7 +1678,13 @@
       <div class="show-modal-b20 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>20d.</h4>
+            <h3>20d 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countB20" class="count">0</p>
           </div>
@@ -1236,7 +1697,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -1245,7 +1709,13 @@
       <div class="show-modal-b21 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>21d.</h4>
+            <h3>21d 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countB21" class="count">0</p>
           </div>
@@ -1258,7 +1728,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -1267,7 +1740,13 @@
       <div class="show-modal-b22 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>22d. Treniruotė</h4>
+            <h3>22d 20:15</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <h4>Treniruotė</h4>
             <label>Užsiregistravo:</label>
             <p id="countB22" class="count">0</p>
           </div>
@@ -1280,7 +1759,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -1289,7 +1771,13 @@
       <div class="show-modal-b23 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>23d.</h4>
+            <h3>23d 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countB23" class="count">0</p>
           </div>
@@ -1302,7 +1790,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -1311,7 +1802,13 @@
       <div class="show-modal-b24 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>24d.</h4>
+            <h3>24d 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countB24" class="count">0</p>
           </div>
@@ -1324,7 +1821,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -1333,7 +1833,13 @@
       <div class="show-modal-b25 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>25d.</h4>
+            <h3>25d 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countB25" class="count">0</p>
           </div>
@@ -1346,7 +1852,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -1355,7 +1864,13 @@
       <div class="show-modal-b26 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>26d.</h4>
+            <h3>26d 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countB26" class="count">0</p>
           </div>
@@ -1368,7 +1883,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -1377,7 +1895,13 @@
       <div class="show-modal-b27 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>27d.</h4>
+            <h3>27d 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countB27" class="count">0</p>
           </div>
@@ -1390,7 +1914,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -1399,7 +1926,13 @@
       <div class="show-modal-b28 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>28d.</h4>
+            <h3>28d 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countB28" class="count">0</p>
           </div>
@@ -1412,7 +1945,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -1421,7 +1957,13 @@
       <div class="show-modal-b29 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>29d. Treniruotė</h4>
+            <h3>29d 20:15</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <h4>Treniruotė</h4>
             <label>Užsiregistravo:</label>
             <p id="countB29" class="count">0</p>
           </div>
@@ -1434,7 +1976,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -1443,7 +1988,13 @@
       <div class="show-modal-b30 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>30d.</h4>
+            <h3>30d 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countB30" class="count">0</p>
           </div>
@@ -1456,7 +2007,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
@@ -1465,7 +2019,13 @@
       <div class="show-modal-b31 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h4>31d.</h4>
+            <h3>31d 00:00</h3>
+            <i
+              class="fa fa-close"
+              onclick="close_modal()"
+              style="font-size: 24px"
+            ></i>
+            <!-- <h4>Treniruotė</h4> -->
             <label>Užsiregistravo:</label>
             <p id="countB31" class="count">0</p>
           </div>
@@ -1478,7 +2038,10 @@
                   name="todo"
                   placeholder="Įveskite vardą"
                   maxlength="20"
+                  required="required"
+                  pattern="[A-Ža-ž0-9]{1,20}"
                 />
+                <button class="btn btn-modal">OK</button>
               </form>
             </div>
           </div>
