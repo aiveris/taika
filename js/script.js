@@ -773,6 +773,7 @@ function todo_b30() {
 function todo_b31() {
   showTodoB31.classList.add("modal-show");
 }
+
 // // User click anyware outside the modal
 window.addEventListener("click", (e) => {
   if (e.target === addTodoA1) {

@@ -149,11 +149,11 @@ table th {
   color: #ffff;
 }
 .btn-modal {
-  width: 65px;
+  width: 55px;
   height: 25px;
   color: #457b9d;
   border: 1px solid #457b9d;
-  margin-left: 18px;
+  margin-left: 20px;
 }
 .btn-modal:hover {
   background: #457b9d;
