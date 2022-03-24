@@ -483,7 +483,7 @@ function today() {
       document.getElementById("a28").className = "free today";
       break;
     case 29:
-      document.getElementById("a29").className = "free today";
+      document.getElementById("a29").className = "work today";
       break;
     case 30:
       document.getElementById("a30").className = "free today";
@@ -492,7 +492,7 @@ function today() {
       document.getElementById("a31").className = "free today";
       break;
     case 101:
-      document.getElementById("b1").className = "work today";
+      document.getElementById("b1").className = "free today";
       break;
     case 102:
       document.getElementById("b2").className = "free today";
@@ -513,7 +513,7 @@ function today() {
       document.getElementById("b7").className = "free today";
       break;
     case 108:
-      document.getElementById("b8").className = "work today";
+      document.getElementById("b8").className = "free today";
       break;
     case 109:
       document.getElementById("b9").className = "free today";
@@ -534,7 +534,7 @@ function today() {
       document.getElementById("b14").className = "free today";
       break;
     case 115:
-      document.getElementById("b15").className = "work today";
+      document.getElementById("b15").className = "free today";
       break;
     case 116:
       document.getElementById("b16").className = "free today";
@@ -555,7 +555,7 @@ function today() {
       document.getElementById("b21").className = "free today";
       break;
     case 122:
-      document.getElementById("b22").className = "work today";
+      document.getElementById("b22").className = "free today";
       break;
     case 123:
       document.getElementById("b23").className = "free today";
@@ -576,7 +576,7 @@ function today() {
       document.getElementById("b28").className = "free today";
       break;
     case 129:
-      document.getElementById("b29").className = "work today";
+      document.getElementById("b29").className = "free today";
       break;
     case 130:
       document.getElementById("b30").className = "free today";

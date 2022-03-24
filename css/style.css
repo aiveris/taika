@@ -234,7 +234,7 @@ p {
   display: inline-block;
 }
 i {
-  margin-left: 70px;
+  margin-left: 64px;
   /* content: url(../assets/close.svg); */
   /* width: 2rem;
   height: 2rem;
@@ -242,7 +242,7 @@ i {
 }
 h3 {
   display: inline-block;
-  margin-left: 90px;
+  margin-left: 94px;
 }
 /* .btn-close {
   display: inline-block;
