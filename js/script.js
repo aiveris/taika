@@ -393,7 +393,7 @@ function today() {
   if (month == 4) {
     day = date2.getDate() + 100;
   }
-  // const day = 3;
+  // const day = 29;
   // console.log(day);
   // console.log(month);
 
