@@ -181,7 +181,7 @@ table th {
 }
 .modal {
   position: relative;
-  background: white;
+  background: rgb(192, 212, 229);
   text-align: center;
   width: 312px;
   margin: 2rem auto;
