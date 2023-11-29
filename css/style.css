@@ -10,7 +10,7 @@ body {
   font-family: "Titillium Web", sans-serif;
   font-size: large;
   /* background: url(../assets/winter1.jpg); */
-  background: rgb(219, 211, 211);
+  background: #eeeee4;
   background-size: cover;
   background-position: center center;
   display: flex;
@@ -156,7 +156,15 @@ table th {
   border: 1px solid #457b9d;
   margin-left: 20px;
 }
-.btn-modal:hover {
+.btn-reg {
+  width: 120px;
+  height: 30px;
+  color: #457b9d;
+  background: #eeeee4;
+  border: 1px solid #457b9d;
+  margin-top: 10px;
+}
+.btn-reg:hover {
   background: #457b9d;
   color: #ffff;
 }
@@ -215,7 +223,7 @@ table th {
 .modal-body {
   padding: 2rem;
 }
-
+/*
 input {
   width: 10rem;
   height: 2.2rem;
@@ -223,6 +231,7 @@ input {
   text-indent: 0.5rem;
   font-size: large;
 }
+*/
 /* .addedPlans {
   color: red;
 } */
@@ -236,6 +245,7 @@ p {
 }
 i {
   margin-left: 64px;
+  cursor: pointer;
   /* content: url(../assets/close.svg); */
   /* width: 2rem;
   height: 2rem;
