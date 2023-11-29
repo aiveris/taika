@@ -101,7 +101,7 @@ button:hover {
   background: #c2c2c5;
 }
 .today {
-  box-shadow: 0 0 15px blue;
+
   border: 2px solid blue;
   color: blue;
 }
