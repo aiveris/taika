@@ -13,7 +13,7 @@
   </head>
   <body>
     <div class="board">
-      <div class="men-pav">Lapkritis</div>
+      <div class="men-pav">Sausis</div>
       <button class="workDay">P</button>
       <button class="workDay">A</button>
       <button class="workDay">T</button>
@@ -23,39 +23,38 @@
       <button class="weekend">S</button>
       <div class="men-pav"></div>
 
-      <span></span>
-      <span></span>
+
       <button onclick="todo_a1()" id="a1" class="free buttonB1">1</button>
       <button onclick="todo_a2()" id="a2" class="free buttonB2">2</button>
       <button onclick="todo_a3()" id="a3" class="free buttonB3">3</button>
       <button onclick="todo_a4()" id="a4" class="free buttonB4">4</button>
       <button onclick="todo_a5()" id="a5" class="free buttonB5">5</button>
       <button onclick="todo_a6()" id="a6" class="free buttonB6">6</button>
-      <button onclick="todo_a7()" id="a7" class="free buttonB7">7</button>
+      <button onclick="todo_a7()" id="a7" class="work buttonB7">7</button>
       <button onclick="todo_a8()" id="a8" class="free buttonB8">8</button>
       <button onclick="todo_a9()" id="a9" class="free buttonB9">9</button>
       <button onclick="todo_a10()" id="a10" class="free buttonB10">10</button>
       <button onclick="todo_a11()" id="a11" class="free buttonB11">11</button>
       <button onclick="todo_a12()" id="a12" class="free buttonB12">12</button>
       <button onclick="todo_a13()" id="a13" class="free buttonB13">13</button>
-      <button onclick="todo_a14()" id="a14" class="work buttonB14">14</button>
+      <button onclick="todo_a14()" id="a14" class="free buttonB14">14</button>
       <button onclick="todo_a15()" id="a15" class="free buttonB15">15</button>
       <button onclick="todo_a16()" id="a16" class="free buttonB16">16</button>
       <button onclick="todo_a17()" id="a17" class="free buttonB17">17</button>
       <button onclick="todo_a18()" id="a18" class="free buttonB18">18</button>
-      <button onclick="todo_a19()" id="a19" class="work buttonB19">19</button>
+      <button onclick="todo_a19()" id="a19" class="free buttonB19">19</button>
       <button onclick="todo_a20()" id="a20" class="free buttonB20">20</button>
       <button onclick="todo_a21()" id="a21" class="free buttonB21">21</button>
       <button onclick="todo_a22()" id="a22" class="free buttonB22">22</button>
-      <button onclick="todo_a23()" id="a23" class="free buttonB23">23</button>
-      <button onclick="todo_a24()" id="a24" class="work buttonB24">24</button>
+      <button onclick="todo_a23()" id="a23" class="work buttonB23">23</button>
+      <button onclick="todo_a24()" id="a24" class="free buttonB24">24</button>
       <button onclick="todo_a25()" id="a25" class="free buttonB25">25</button>
       <button onclick="todo_a26()" id="a26" class="free buttonB26">26</button>
       <button onclick="todo_a27()" id="a27" class="free buttonB27">27</button>
       <button onclick="todo_a28()" id="a28" class="free buttonB28">28</button>
-      <button onclick="todo_a29()" id="a29" class="work buttonB29">29</button>
+      <button onclick="todo_a29()" id="a29" class="free buttonB29">29</button>
       <button onclick="todo_a30()" id="a30" class="free buttonB30">30</button>
-      <!-- <button onclick="todo_a31()" id="a31" class="free buttonB31">31</button> -->
+      <button onclick="todo_a31()" id="a31" class="free buttonB31">31</button>
 
       <!-- Add Modal -->
       <div class="show-modal-a1 modal-wrapper">
@@ -240,15 +239,17 @@
       <div class="show-modal-a7 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h3>7d. 00:00</h3>
+            <h3>7d. 20:10</h3>
             <i
               class="fi fi-br-cross-small"
               onclick="close_modal()"
               style="font-size: 28px"
             ></i>
-            <!-- <h4>Treniruotė</h4> -->
-<!--            <label>Užsiregistravo:</label>-->
-<!--            <p id="countA7" class="count">0</p>-->
+
+            <h4>"Šventas gralis"</h4>
+            <label>VRM salė</label><br/>
+            <label>Žirmūnų g. 1F</label> <a href="https://maps.app.goo.gl/fmw7tG6akfyhp3DcA" target="_blank">(map)</a><br/>
+            <input type="button" class="btn btn-reg" onclick="location.href='https://aiveris.github.io/osportas'" value="Registruotis"/>
           </div>
 <!--          <div class="table-wrapper">-->
 <!--            <table class="table-a7"></table>-->
@@ -456,10 +457,10 @@
               onclick="close_modal()"
               style="font-size: 28px"
             ></i>
-            <h4>"Draudimas.lt"</h4>
-            <label>SK Ego Forte</label><br/>
-            <label>Savanorių g. 124</label> <a href="https://maps.app.goo.gl/ZANhJfZSgnxHLiDR7" target="_blank">(map)</a><br/>
-            <input type="button" class="btn btn-reg" onclick="location.href='https://aiveris.github.io/osportas'" value="Registruotis"/>
+<!--            <h4>"Draudimas.lt"</h4>-->
+<!--            <label>SK Ego Forte</label><br/>-->
+<!--            <label>Savanorių g. 124</label> <a href="https://maps.app.goo.gl/ZANhJfZSgnxHLiDR7" target="_blank">(map)</a><br/>-->
+<!--            <input type="button" class="btn btn-reg" onclick="location.href='https://aiveris.github.io/osportas'" value="Registruotis"/>-->
 <!--            <label>Užsiregistravo:</label>-->
 <!--            <p id="countA14" class="count">0</p>-->
           </div>
@@ -609,10 +610,10 @@
               onclick="close_modal()"
               style="font-size: 28px"
             ></i>
-            <h4>"KK Rubinas"</h4>
-            <label>Lietuvos KNUC</label><br/>
-            <label>Filaretų g. 36</label> <a href="https://maps.app.goo.gl/cdbMBEWXfirhythb8" target="_blank">(map)</a><br/>
-            <input type="button" class="btn btn-reg" onclick="location.href='https://aiveris.github.io/osportas'" value="Registruotis"/>
+<!--            <h4>"KK Rubinas"</h4>-->
+<!--            <label>Lietuvos KNUC</label><br/>-->
+<!--            <label>Filaretų g. 36</label> <a href="https://maps.app.goo.gl/cdbMBEWXfirhythb8" target="_blank">(map)</a><br/>-->
+<!--            <input type="button" class="btn btn-reg" onclick="location.href='https://aiveris.github.io/osportas'" value="Registruotis"/>-->
 <!--            <label>Užsiregistravo:</label>-->
 <!--            <p id="countA19" class="count">0</p>-->
           </div>
@@ -726,15 +727,16 @@
       <div class="show-modal-a23 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h3>23d. 00:00</h3>
+            <h3>23d. 19:15</h3>
             <i
               class="fi fi-br-cross-small"
               onclick="close_modal()"
               style="font-size: 28px"
             ></i>
-            <!-- <h4>Treniruotė</h4> -->
-<!--            <label>Užsiregistravo:</label>-->
-<!--            <p id="countA23" class="count">0</p>-->
+            <h4>"SKM-GRIZLIAI"</h4>
+            <label>S. Daukanto progimnazija</label><br/>
+            <label>Naugarduko g. 7</label> <a href="https://maps.app.goo.gl/KMjCX7pc7TU3DJHY8" target="_blank">(map)</a><br/>
+            <input type="button" class="btn btn-reg" onclick="location.href='https://aiveris.github.io/osportas'" value="Registruotis"/>
           </div>
 <!--          <div class="table-wrapper">-->
 <!--            <table class="table-a23"></table>-->
@@ -762,12 +764,11 @@
               onclick="close_modal()"
               style="font-size: 28px"
             ></i>
-            <h4>"Navalnica"</h4>
-            <label>G7 sportas</label><br/>
-            <label>V.Grybo g. 7</label> <a href="https://maps.app.goo.gl/wdCjm3rFLgmyED3EA" target="_blank">(map)</a><br/>
-            <input type="button" class="btn btn-reg" onclick="location.href='https://aiveris.github.io/osportas'" value="Registruotis"/>
-<!--            <label>Užsiregistravo:</label>-->
-<!--            <p id="countA24" class="count">0</p>-->
+<!--            <h4>"Navalnica"</h4>-->
+<!--            <label>G7 sportas</label><br/>-->
+<!--            <label>V.Grybo g. 7</label> <a href="https://maps.app.goo.gl/wdCjm3rFLgmyED3EA" target="_blank">(map)</a><br/>-->
+<!--            <input type="button" class="btn btn-reg" onclick="location.href='https://aiveris.github.io/osportas'" value="Registruotis"/>-->
+
           </div>
 <!--          <div class="table-wrapper">-->
 <!--            <table class="table-a24"></table>-->
@@ -916,10 +917,10 @@
               onclick="close_modal()"
               style="font-size: 28px"
             ></i>
-            <h4>"R2P Sport"</h4>
-            <label>Ž.Augusto m-kla</label><br/>
-            <label>Šeškinės g. 25</label> <a href="https://maps.app.goo.gl/KEWMWM42V6Pp87fNA" target="_blank">(map)</a><br/>
-            <input type="button" class="btn btn-reg" onclick="location.href='https://aiveris.github.io/osportas'" value="Registruotis"/>
+<!--            <h4>"R2P Sport"</h4>-->
+<!--            <label>Ž.Augusto m-kla</label><br/>-->
+<!--            <label>Šeškinės g. 25</label> <a href="https://maps.app.goo.gl/KEWMWM42V6Pp87fNA" target="_blank">(map)</a><br/>-->
+<!--            <input type="button" class="btn btn-reg" onclick="location.href='https://aiveris.github.io/osportas'" value="Registruotis"/>-->
 <!--            <label>Užsiregistravo:</label>-->
 <!--            <p id="countA29" class="count">0</p>-->
           </div>
@@ -1028,7 +1029,7 @@
     </div>
     <!-- ----------------------------------------------- -->
     <div class="board">
-      <div class="men-pav">Gruodis</div>
+      <div class="men-pav">Vasaris</div>
       <button class="workDay">P</button>
       <button class="workDay">A</button>
       <button class="workDay">T</button>
@@ -1041,24 +1042,23 @@
       <span></span>
       <span></span>
       <span></span>
-      <span></span>
       <button onclick="todo_b1()" id="b1" class="free buttonB1">1</button>
-      <button onclick="todo_b2()" id="b2" class="free buttonB2">2</button>
-      <button onclick="todo_b3()" id="b3" class="work buttonB3">3</button>
+      <button onclick="todo_b2()" id="b2" class="work buttonB2">2</button>
+      <button onclick="todo_b3()" id="b3" class="free buttonB3">3</button>
       <button onclick="todo_b4()" id="b4" class="free buttonB4">4</button>
       <button onclick="todo_b5()" id="b5" class="free buttonB5">5</button>
       <button onclick="todo_b6()" id="b6" class="free buttonB6">6</button>
       <button onclick="todo_b7()" id="b7" class="free buttonB7">7</button>
-      <button onclick="todo_b8()" id="b8" class="work buttonB8">8</button>
-      <button onclick="todo_b9()" id="b9" class="free buttonB9">9</button>
+      <button onclick="todo_b8()" id="b8" class="free buttonB8">8</button>
+      <button onclick="todo_b9()" id="b9" class="work buttonB9">9</button>
       <button onclick="todo_b10()" id="b10" class="free buttonB10">10</button>
       <button onclick="todo_b11()" id="b11" class="free buttonB11">11</button>
       <button onclick="todo_b12()" id="b12" class="free buttonB12">12</button>
-      <button onclick="todo_b13()" id="b13" class="free buttonB13">13</button>
+      <button onclick="todo_b13()" id="b13" class="work buttonB13">13</button>
       <button onclick="todo_b14()" id="b14" class="free buttonB14">14</button>
       <button onclick="todo_b15()" id="b15" class="free buttonB15">15</button>
       <button onclick="todo_b16()" id="b16" class="free buttonB16">16</button>
-      <button onclick="todo_b17()" id="b17" class="work buttonB17">17</button>
+      <button onclick="todo_b17()" id="b17" class="free buttonB17">17</button>
       <button onclick="todo_b18()" id="b18" class="free buttonB18">18</button>
       <button onclick="todo_b19()" id="b19" class="free buttonB19">19</button>
       <button onclick="todo_b20()" id="b20" class="free buttonB20">20</button>
@@ -1066,13 +1066,13 @@
       <button onclick="todo_b22()" id="b22" class="free buttonB22">22</button>
       <button onclick="todo_b23()" id="b23" class="free buttonB23">23</button>
       <button onclick="todo_b24()" id="b24" class="free buttonB24">24</button>
-      <button onclick="todo_b25()" id="b25" class="free buttonB25">25</button>
+      <button onclick="todo_b25()" id="b25" class="work buttonB25">25</button>
       <button onclick="todo_b26()" id="b26" class="free buttonB26">26</button>
-      <button onclick="todo_b27()" id="b27" class="free buttonB27">27</button>
+      <button onclick="todo_b27()" id="b27" class="work buttonB27">27</button>
       <button onclick="todo_b28()" id="b28" class="free buttonB28">28</button>
       <button onclick="todo_b29()" id="b29" class="free buttonB29">29</button>
-      <button onclick="todo_b30()" id="b30" class="free buttonB30">30</button>
-      <button onclick="todo_b31()" id="b31" class="free buttonB31">31</button>
+<!--      <button onclick="todo_b30()" id="b30" class="free buttonB30">30</button>-->
+<!--      <button onclick="todo_b31()" id="b31" class="free buttonB31">31</button>-->
 
       <!-- Add Modal -->
       <div class="show-modal-b1 modal-wrapper">
@@ -1109,15 +1109,16 @@
       <div class="show-modal-b2 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h3>2d. 00:00</h3>
+            <h3>2d. 19:40</h3>
             <i
               class="fi fi-br-cross-small"
               onclick="close_modal()"
               style="font-size: 28px"
             ></i>
-            <!-- <h4>Treniruotė</h4> -->
-<!--            <label>Užsiregistravo:</label>-->
-<!--            <p id="countB2" class="count">0</p>-->
+            <h4>"BC Quokks"</h4>
+            <label>Antakalnio gimnazija</label><br/>
+            <label>Antakalnio g. 29</label> <a href="https://maps.app.goo.gl/NYhMNPBb3oRatjRTA" target="_blank">(map)</a><br/>
+            <input type="button" class="btn btn-reg" onclick="location.href='https://aiveris.github.io/osportas'" value="Registruotis"/>
           </div>
 <!--          <div class="table-wrapper">-->
 <!--            <table class="table-b2"></table>-->
@@ -1145,13 +1146,12 @@
               onclick="close_modal()"
               style="font-size: 28px"
             ></i>
-            <h4>"BC Random"</h4>
-            <label>Savanorių sporto arena</label><br/>
-            <label>Savanorių g. 178B</label> <a href="https://maps.app.goo.gl/pnaZAqwXtpTfpmjf9" target="_blank">(map)</a><br/>
-<!--            <strong><a href="https://bit.ly/odangau" target="_blank">Registruotis</a></strong>-->
-            <input type="button" class="btn btn-reg" onclick="location.href='https://aiveris.github.io/osportas'" value="Registruotis"/>
-<!--            <label>Užsiregistravo:</label>-->
-<!--            <p id="countB3" class="count">0</p>-->
+<!--            <h4>"BC Random"</h4>-->
+<!--            <label>Savanorių sporto arena</label><br/>-->
+<!--            <label>Savanorių g. 178B</label> <a href="https://maps.app.goo.gl/pnaZAqwXtpTfpmjf9" target="_blank">(map)</a><br/>-->
+<!--&lt;!&ndash;            <strong><a href="https://bit.ly/odangau" target="_blank">Registruotis</a></strong>&ndash;&gt;-->
+<!--            <input type="button" class="btn btn-reg" onclick="location.href='https://aiveris.github.io/osportas'" value="Registruotis"/>-->
+
           </div>
 <!--          <div class="table-wrapper">-->
 <!--            <table class="table-b3"></table>-->
@@ -1299,10 +1299,10 @@
               onclick="close_modal()"
               style="font-size: 28px"
             ></i>
-            <h4>"Širvintų KK Briedis"</h4>
-            <label>Širvintų SC</label><br/>
-            <label>Kalnalaukio g. 41, Širvintos</label> <a href="https://maps.app.goo.gl/Sx7F8YVjvV6nZK6j8" target="_blank">(map)</a><br/>
-            <input type="button" class="btn btn-reg" onclick="location.href='https://aiveris.github.io/osportas'" value="Registruotis"/>
+<!--            <h4>"Širvintų KK Briedis"</h4>-->
+<!--            <label>Širvintų SC</label><br/>-->
+<!--            <label>Kalnalaukio g. 41, Širvintos</label> <a href="https://maps.app.goo.gl/Sx7F8YVjvV6nZK6j8" target="_blank">(map)</a><br/>-->
+<!--            <input type="button" class="btn btn-reg" onclick="location.href='https://aiveris.github.io/osportas'" value="Registruotis"/>-->
 <!--            <label>Užsiregistravo:</label>-->
 <!--            <p id="countB8" class="count">0</p>-->
           </div>
@@ -1326,15 +1326,16 @@
       <div class="show-modal-b9 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h3>9d. 00:00</h3>
+            <h3>9d. 19:50</h3>
             <i
               class="fi fi-br-cross-small"
               onclick="close_modal()"
               style="font-size: 28px"
             ></i>
-            <!-- <h4>Treniruotė</h4> -->
-<!--            <label>Užsiregistravo:</label>-->
-<!--            <p id="countB9" class="count">0</p>-->
+            <h4>"Spin to win"</h4>
+            <label>Nemenčinės Gedimino gimn.</label><br/>
+            <label>Ežero g. 5, Nemenčinė</label> <a href="https://maps.app.goo.gl/Nj33v9HvKgmsJVZf8" target="_blank">(map)</a><br/>
+            <input type="button" class="btn btn-reg" onclick="location.href='https://aiveris.github.io/osportas'" value="Registruotis"/>
           </div>
 <!--          <div class="table-wrapper">-->
 <!--            <table class="table-b9"></table>-->
@@ -1446,15 +1447,16 @@
       <div class="show-modal-b13 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h3>13d. 00:00</h3>
+            <h3>13d. 19:10</h3>
             <i
               class="fi fi-br-cross-small"
               onclick="close_modal()"
               style="font-size: 28px"
             ></i>
-            <!-- <h4>Treniruotė</h4> -->
-<!--            <label>Užsiregistravo:</label>-->
-<!--            <p id="countB13" class="count">0</p>-->
+            <h4>"SKM-Naujininkai"</h4>
+            <label>Naujininkų progimnazija</label><br/>
+            <label>Šaltkalvių g. 32</label> <a href="https://maps.app.goo.gl/fAPJn6txnCt11bBh9" target="_blank">(map)</a><br/>
+            <input type="button" class="btn btn-reg" onclick="location.href='https://aiveris.github.io/osportas'" value="Registruotis"/>
           </div>
 <!--          <div class="table-wrapper">-->
 <!--            <table class="table-b13"></table>-->
@@ -1572,10 +1574,10 @@
               onclick="close_modal()"
               style="font-size: 28px"
             ></i>
-            <h4>"Gelvonai"</h4>
-            <label>Vilniaus kolegija</label><br/>
-            <label>Didlaukio g. 49</label> <a href="https://maps.app.goo.gl/wgCTdMxB6DNWHXhq6" target="_blank">(map)</a><br/>
-            <input type="button" class="btn btn-reg" onclick="location.href='https://aiveris.github.io/osportas'" value="Registruotis"/>
+<!--            <h4>"Gelvonai"</h4>-->
+<!--            <label>Vilniaus kolegija</label><br/>-->
+<!--            <label>Didlaukio g. 49</label> <a href="https://maps.app.goo.gl/wgCTdMxB6DNWHXhq6" target="_blank">(map)</a><br/>-->
+<!--            <input type="button" class="btn btn-reg" onclick="location.href='https://aiveris.github.io/osportas'" value="Registruotis"/>-->
 <!--            <label>Užsiregistravo:</label>-->
 <!--            <p id="countB17" class="count">0</p>-->
           </div>
@@ -1809,15 +1811,16 @@
       <div class="show-modal-b25 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h3>25d. 00:00</h3>
+            <h3>25d. 16:40</h3>
             <i
               class="fi fi-br-cross-small"
               onclick="close_modal()"
               style="font-size: 28px"
             ></i>
-            <!-- <h4>Treniruotė</h4> -->
-<!--            <label>Užsiregistravo:</label>-->
-<!--            <p id="countB25" class="count">0</p>-->
+            <h4>"Gervėčių kraštas"</h4>
+            <label>Lietuvių namai</label><br/>
+            <label>Dzūkų g. 43</label> <a href="https://maps.app.goo.gl/fucEnxkd8sdM43sX8" target="_blank">(map)</a><br/>
+            <input type="button" class="btn btn-reg" onclick="location.href='https://aiveris.github.io/osportas'" value="Registruotis"/>
           </div>
 <!--          <div class="table-wrapper">-->
 <!--            <table class="table-b25"></table>-->
@@ -1869,15 +1872,16 @@
       <div class="show-modal-b27 modal-wrapper">
         <div class="modal">
           <div class="modal-header">
-            <h3>27d. 00:00</h3>
+            <h3>27d. 19:45</h3>
             <i
               class="fi fi-br-cross-small"
               onclick="close_modal()"
               style="font-size: 28px"
             ></i>
-            <!-- <h4>Treniruotė</h4> -->
-<!--            <label>Užsiregistravo:</label>-->
-<!--            <p id="countB27" class="count">0</p>-->
+            <h4>"Vilniaus KM-2007-III"</h4>
+            <label>Baltupių progimnazija</label><br/>
+            <label>Didlaukio g. 23</label> <a href="https://maps.app.goo.gl/tqvQG3jxxggYDNre6" target="_blank">(map)</a><br/>
+            <input type="button" class="btn btn-reg" onclick="location.href='https://aiveris.github.io/osportas'" value="Registruotis"/>
           </div>
 <!--          <div class="table-wrapper">-->
 <!--            <table class="table-b27"></table>-->
