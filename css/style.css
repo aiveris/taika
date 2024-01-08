@@ -91,11 +91,15 @@ button:hover {
 .free {
   background: #ddd;
 }
-.work {
+.lygaE {
   background: #aaf36e;
 }
-.workDay {
-  background: #c2c2c5;
+.aitvaras{
+  background: #eab676;
+}
+
+.mix {
+  background-image: linear-gradient(135deg, #aaf36e, #eab676);
 }
 .weekend {
   background: #c2c2c5;
