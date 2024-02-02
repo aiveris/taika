@@ -495,7 +495,7 @@ function today() {
       document.getElementById("b1").className = "free today";
       break;
     case 102:
-      document.getElementById("b2").className = "lygaE today";
+      document.getElementById("b2").className = "free today";
       break;
     case 103:
       document.getElementById("b3").className = "free today";
