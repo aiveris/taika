@@ -429,7 +429,7 @@ function today() {
       document.getElementById("a10").className = "free today";
       break;
     case 11:
-      document.getElementById("a11").className = "free today";
+      document.getElementById("a11").className = "lygaE today";
       break;
     case 12:
       document.getElementById("a12").className = "free today";
@@ -447,7 +447,7 @@ function today() {
       document.getElementById("a16").className = "free today";
       break;
     case 17:
-      document.getElementById("a17").className = "free today";
+      document.getElementById("a17").className = "aitvaras today";
       break;
     case 18:
       document.getElementById("a18").className = "free today";
