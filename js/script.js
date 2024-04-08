@@ -405,7 +405,7 @@ function today() {
       document.getElementById("a2").className = "free today";
       break;
     case 3:
-      document.getElementById("a3").className = "free today";
+      document.getElementById("a3").className = "lygaE today";
       break;
     case 4:
       document.getElementById("a4").className = "free today";
@@ -474,7 +474,7 @@ function today() {
       document.getElementById("a25").className = "free today";
       break;
     case 26:
-      document.getElementById("a26").className = "lygaE today";
+      document.getElementById("a26").className = "free today";
       break;
     case 27:
       document.getElementById("a27").className = "free today";
@@ -531,7 +531,7 @@ function today() {
       document.getElementById("b13").className = "free today";
       break;
     case 114:
-      document.getElementById("b14").className = "free today";
+      document.getElementById("b14").className = "aitvaras today";
       break;
     case 115:
       document.getElementById("b15").className = "lygaE today";
