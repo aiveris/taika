@@ -390,7 +390,7 @@ function today() {
   let date2 = new Date();
   let day = date2.getDate();
 
-  if (month == 4) {
+  if (month == 11) {
     day = date2.getDate() + 100;
   }
   // const day = 29;
@@ -405,7 +405,7 @@ function today() {
       document.getElementById("a2").className = "free today";
       break;
     case 3:
-      document.getElementById("a3").className = "lygaE today";
+      document.getElementById("a3").className = "free today";
       break;
     case 4:
       document.getElementById("a4").className = "free today";
@@ -504,13 +504,13 @@ function today() {
       document.getElementById("b4").className = "free today";
       break;
     case 105:
-      document.getElementById("b5").className = "lygaE today";
+      document.getElementById("b5").className = "free today";
       break;
     case 106:
       document.getElementById("b6").className = "free today";
       break;
     case 107:
-      document.getElementById("b7").className = "aitvaras today";
+      document.getElementById("b7").className = "free today";
       break;
     case 108:
       document.getElementById("b8").className = "free today";
@@ -525,19 +525,19 @@ function today() {
       document.getElementById("b11").className = "free today";
       break;
     case 112:
-      document.getElementById("b12").className = "lygaE today";
+      document.getElementById("b12").className = "free today";
       break;
     case 113:
       document.getElementById("b13").className = "free today";
       break;
     case 114:
-      document.getElementById("b14").className = "aitvaras today";
+      document.getElementById("b14").className = "free today";
       break;
     case 115:
       document.getElementById("b15").className = "free today";
       break;
     case 116:
-      document.getElementById("b16").className = "lygaE today";
+      document.getElementById("b16").className = "free today";
       break;
     case 117:
       document.getElementById("b17").className = "free today";
@@ -579,7 +579,7 @@ function today() {
       document.getElementById("b29").className = "free today";
       break;
     case 130:
-      document.getElementById("b30").className = "lygaE today";
+      document.getElementById("b30").className = "free today";
       break;
     case 131:
       document.getElementById("b31").className = "free today";
@@ -972,7 +972,6 @@ window.addEventListener("click", (e) => {
 
 document.addEventListener("keydown", (event) => {
   if (event.code === "Escape" || event.code === 27) {
-    editModal.classList.remove("modal-show");
     showTodoA1.classList.remove("modal-show");
     showTodoA2.classList.remove("modal-show");
     showTodoA3.classList.remove("modal-show");
@@ -5149,7 +5148,6 @@ editModalForm.addEventListener("submit", (e) => {
 });
 
 function close_modal() {
-  editModal.classList.remove("modal-show");
   showTodoA1.classList.remove("modal-show");
   showTodoA2.classList.remove("modal-show");
   showTodoA3.classList.remove("modal-show");

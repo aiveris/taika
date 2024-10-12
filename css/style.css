@@ -91,11 +91,8 @@ button:hover {
 .free {
   background: #ddd;
 }
-.lygaE {
+.game {
   background: #aaf36e;
-}
-.aitvaras{
-  background: #eab676;
 }
 
 .mix {
@@ -105,7 +102,6 @@ button:hover {
   background: #c2c2c5;
 }
 .today {
-
   border: 2px solid blue;
   color: blue;
 }
@@ -136,30 +132,7 @@ table th {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
 }
-.btn-edit {
-  color: #457b9d;
-  border: 1px solid #99a3f8;
-}
-.btn-edit:hover {
-  background: #457b9d;
-  color: #ffff;
-  border: 1px solid #457b9d;
-}
-.btn-delete {
-  color: red;
-  border: 1px solid red;
-}
-.btn-delete:hover {
-  background: red;
-  color: #ffff;
-}
-.btn-modal {
-  width: 55px;
-  height: 25px;
-  color: #457b9d;
-  border: 1px solid #457b9d;
-  margin-left: 20px;
-}
+
 .btn-reg {
   width: 120px;
   height: 30px;
@@ -167,10 +140,10 @@ table th {
   background: #eeeee4;
   border: 1px solid #457b9d;
   margin-top: 10px;
+  transition: 0.3s;
 }
 .btn-reg:hover {
-  background: #457b9d;
-  color: #ffff;
+  transform: scale(1.1);
 }
 
 .table-wrapper {
@@ -227,22 +200,21 @@ table th {
 .modal-body {
   padding: 2rem;
 }
-/*
-input {
-  width: 10rem;
-  height: 2.2rem;
-  outline: none;
-  text-indent: 0.5rem;
-  font-size: large;
-}
-*/
-/* .addedPlans {
-  color: red;
-} */
+
 .count {
   color: #457b9d;
   font-weight: bold;
   font-size: 24px;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 25px;
+  transition: 0.3s;
+}
+a:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 p {
   display: inline-block;
@@ -250,19 +222,21 @@ p {
 i {
   margin-left: 64px;
   cursor: pointer;
-  /* content: url(../assets/close.svg); */
-  /* width: 2rem;
-  height: 2rem;
-  display: inline-block; */
+  display: inline-block;
+  transition: 0.3s;
+}
+i:hover {
+  transform: scale(1.2);
 }
 h3 {
   display: inline-block;
   margin-left: 94px;
 }
-/* .btn-close {
+
+img {
   display: inline-block;
-  margin-left: 70px;
-  width: 22px;
-  height: 22px;
-  font-size: 1em;
-} */
+  transition: 0.3s;
+}
+img:hover {
+  transform: scale(1.2);
+}

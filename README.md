@@ -1,6 +1,5 @@
-# taika
+# Rungtynės
 
-App Taika is calendar with marked game days and registration form.
+App Rungtynės is calendar with marked game days, date, time, link to map and link to registration form.
 Game shedule: green color indicates game days, grey color indicates rest days.
-Registration list: each day contains separate registration list. After registration near each input appears edit and delete buttons.
-White color indicates present day.
+Blue color frame indicates present day.
