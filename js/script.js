@@ -779,9 +779,6 @@ window.addEventListener("click", (e) => {
   if (e.target === addTodoA1) {
     addModal.classList.remove("modal-show");
   }
-  if (e.target === editModal) {
-    editModal.classList.remove("modal-show");
-  }
   if (e.target === showTodoA1) {
     showTodoA1.classList.remove("modal-show");
   }
