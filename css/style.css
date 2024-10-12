@@ -9,8 +9,8 @@
 body {
   font-family: "Titillium Web", sans-serif;
   font-size: large;
-  /* background: url(../assets/winter1.jpg); */
-  background: #eeeee4;
+  background: url(../assets/basketball.jpg);
+  /* background: #eeeee4; */
   background-size: cover;
   background-position: center center;
   display: flex;
@@ -95,9 +95,6 @@ button:hover {
   background: #aaf36e;
 }
 
-.mix {
-  background-image: linear-gradient(135deg, #aaf36e, #eab676);
-}
 .weekend {
   background: #c2c2c5;
 }
@@ -239,4 +236,13 @@ img {
 }
 img:hover {
   transform: scale(1.2);
+}
+
+/*games*/
+#a24,
+#a31,
+#b5,
+#b14,
+#b25 {
+  background: #aaf36e;
 }
