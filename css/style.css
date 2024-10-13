@@ -135,7 +135,8 @@ table th {
   color: #457b9d;
   background: #eeeee4;
   border: 1px solid #457b9d;
-  margin-top: 10px;
+  margin-top: 5px;
+  margin-bottom: -5px;
   transition: 0.3s;
 }
 .btn-reg:hover {
@@ -233,6 +234,7 @@ img {
   display: inline-block;
   transition: 0.3s;
   cursor: pointer;
+  margin-top: 5px;
 }
 img:hover {
   transform: scale(1.2);
