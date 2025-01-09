@@ -390,7 +390,7 @@ function today() {
   let date2 = new Date();
   let day = date2.getDate();
 
-  if (month == 11) {
+  if (month == 1) {
     day = date2.getDate() + 100;
   }
   // const day = 29;
